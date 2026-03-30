@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease;
+}
+
+.terminal {
+    width: 100%;
+    height: 100%;
+    background-color: #CB0404;
+    background-image: url("../assets/terminal.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.terminal-word {
+    color: #FFD955;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: "Fira Code", monospace;
+}
+
+.terminal-img-cont {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.line {
+    border: none;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.29);
+    width: 100%;
+    opacity: 0.8;
+}
+
+.terminal-text {
+    white-space: pre-wrap;
+    color: #2aff2a;
+    overflow: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Fira Code", monospace;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border: 1px solid rgba(193, 184, 184, 0.409);
+}
+
+.prompt {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    flex: 1;
+    font-family: inherit;
+    font-size: inherit;
+}

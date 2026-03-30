@@ -1,0 +1,31 @@
+.codeWrapper {
+    height: 100%;
+    width: 100%;
+    border: 7px solid #B60018; /* SPyCe Red */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding: 10px 0;
+    background-image: url('../assets/midcon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.codeWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #2d0005cc; 
+    z-index: 0;
+}
+
+.monaco-editor, 
+.monaco-editor .margin, 
+.monaco-editor-background {
+    background-color: transparent !important;
+    z-index: 1;
+}
+
+.shrink { width: 65%; }
+.expand { width: 100%; }

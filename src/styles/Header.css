@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainHeader {
+    background-color: #B60018;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 5px 15px;
+}
+
+.spyce, .runBtn, .lexicalBtn, .syntaxBtn {
+    cursor: pointer;
+    font-family: "Fira Code", monospace;
+    height: 90%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: hsla(353, 100%, 9%, 0.5);
+}
+
+.runBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftBtns, .rightBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.spyce {
+    background-image: url("../assets/spyce.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 70px;
+    min-height: 100%;
+}
+
+
+/* HOVER STYLES */
+.runBtn:hover, .lexicalBtn:hover, .syntaxBtn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spyce:hover {
+    filter: brightness(0.8);
+}
